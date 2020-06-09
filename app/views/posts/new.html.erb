@@ -1,0 +1,12 @@
+<h1>新規投稿ページ</h1>
+<div class="new-content">
+  <%= form_tag("/posts/create") do %>
+    <% @post.errors.full_messages.each do |message| %>
+    <div class="edit-error">
+      <%= message %>
+    </div>
+    <% end %>
+    <textarea name="content" rows="4" cols="40"></textarea>
+    <input type="submit" value="投稿する">
+  <% end %>
+</div>

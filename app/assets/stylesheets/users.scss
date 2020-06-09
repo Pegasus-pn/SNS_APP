@@ -1,0 +1,53 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.users-index{
+  text-align:center;
+  margin-bottom: 20px;
+  width:20%;
+  margin: auto ;
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0px 2px 5px 0px grey;
+}
+.users-index img{
+  width:40px;
+  height:40px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: absolute;
+  left :35px;
+  top:5px;
+}
+
+.users-show{
+  text-align:center;
+}
+
+.users-show img{
+  object-fit: cover;
+}
+.signup-form{
+  text-align: center;
+}
+
+.users-show img{
+  height:50px;
+  width:50px;
+  border-radius: 20px;
+}
+
+.login-form{
+  text-align: center;
+}
+
+li{
+  list-style:none;
+  display: inline-block;
+}
+
+ul{
+  text-align: center;
+  padding:10px 20px;
+}

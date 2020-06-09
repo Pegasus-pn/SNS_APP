@@ -1,0 +1,26 @@
+<h1>詳細画面</h1>
+<div class="users-show">  
+  <img src="<%= "/user_images/#{@user.image_name}" %>">
+  <%= @user.name %><br>
+  <%= @user.email %>
+  <% if @user.id == @current_user.id %>
+    <%= link_to("編集","/users/#{@user.id}/edit") %>
+    <%= link_to("削除","/users/#{@user.id}/destroy") %>
+  <% end %>
+</div>
+<ul>
+  <li><%= link_to("投稿","/users/#{@user.id}")%></li>
+  <li><%= link_to("いいね","/users/#{@user.id}/likes") %></li>
+</ul>
+  <% @user.posts.each do |post|%>
+    <div class="index-content">
+      <img src="<%= "/user_images/#{post.user.image_name}" %>">
+      <div class="user-name">
+        <%= link_to(post.user.name, "/users/#{post.user.id}") %><br>
+      </div>
+
+      <div class="user-content">
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+      </div>
+    </div>
+  <% end %>
