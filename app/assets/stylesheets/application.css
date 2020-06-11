@@ -14,8 +14,16 @@
  *= require_self
  */
 
-ul li{
-  display: inline;
-  padding-left:15px;
+body{
+  font-family:sans-serif;
 }
 
+ul li{
+  padding-left:15px;
+  float:right;
+}
+
+.register{
+  border: 1px solid #e6ecf0;
+  border-radius: 21px;
+}
