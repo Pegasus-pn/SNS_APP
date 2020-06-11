@@ -8,9 +8,11 @@
     <%= link_to("削除","/users/#{@user.id}/destroy") %>
   <% end %>
 </div>
+  <div class="unique-user-index">
 <ul>
-  <li><%= link_to("投稿","/users/#{@user.id}")%></li>
-  <li><%= link_to("いいね","/users/#{@user.id}/likes") %></li>
+    <li><%= link_to("投稿","/users/#{@user.id}")%></li>
+    <li><%= link_to("いいね","/users/#{@user.id}/likes") %></li>
+  </div>
 </ul>
   <% @user.posts.each do |post|%>
     <div class="index-content">

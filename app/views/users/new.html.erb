@@ -14,6 +14,14 @@
     <input name="email" value="<%= @user.email %>"><br>
     <p>パスワード</p>
     <input name="password" type="password" value="<%= @user.password %>"><br>
-    <input type="submit" value="新規登録">
+    <input class="signup-btn"  type="submit" value="新規登録">
   </div>
 <% end %>
+
+<div class="login-link">
+  <p>すでに登録していますか？</p>
+  <span>
+    <%= link_to("ログイン","/login") %>
+  </span>
+  はこちら
+</div>

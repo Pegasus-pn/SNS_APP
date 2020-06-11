@@ -37,6 +37,15 @@
   margin-top:10px;
 }
 
+.signup-btn{
+  background-color: rgb(197, 211, 9);
+  color: #7f2300;
+  border:solid 1px rgba(0, 0, 0, 0.034);
+  margin-top: 50px;
+  padding:1em 2em;
+  font-size: 20px;
+}
+
 .users-show img{
   height:50px;
   width:50px;
@@ -45,6 +54,35 @@
 
 .login-form{
   text-align: center;
+  margin-top: 30px;
 }
 
+.login-btn{
+  background-color: rgb(175, 62, 58);
+  color: #ffee00b4;
+  border:solid 1px rgba(0, 0, 0, 0.034);
+  margin-top: 50px;
+  padding:1em 2em;
+  font-size: 20px;
+}
 
+.login-link{
+  text-align:center;
+  margin-top: 40px;
+}
+
+.login-link p{
+  margin-bottom: 10px;
+}
+
+.login-link span{
+  text-decoration-line: underline;
+}
+
+.form-error{
+  text-align: center;
+}
+
+.unique-user-index{
+  text-align: center;
+}

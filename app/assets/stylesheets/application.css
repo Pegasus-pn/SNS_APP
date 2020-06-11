@@ -32,6 +32,7 @@ ul li{
 .top-icon{
   float:left;
   color:rgb(47, 179, 47);
+  font-size: 30px;
 }
 
 .register{
@@ -49,4 +50,5 @@ header{
   background-color: white;
   height:100px;
   text-align: center;
+  box-shadow:0 3px 3px 0 rgba(0, 0, 0, 0.321);
 }
