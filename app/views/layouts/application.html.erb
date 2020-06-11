@@ -13,17 +13,16 @@
   <body>
     <header>
       <div class="header_main">
-        <p>ヘッダー</p>
         <ul class="header-option">
+              <li class="top-icon">
+                <%= link_to("SHARE","/") %>
+              </li>
             <% if @current_user %>
               <li>
                 <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
               </li>     
               <li>
                 <%= link_to("投稿一覧","/posts/index") %>
-              </li>
-              <li>
-                <%= link_to("トップ","/") %>
               </li>
               <li>
                 <%= link_to("ユーザー一覧","/users/index") %>
@@ -35,11 +34,11 @@
                 <%= link_to("ログアウト","/logout",method: :post)%>
               </li>
               <% else %>
-              <li>
-                <%= link_to("ログイン","/login") %>
-              </li>
               <li class="register">
                 <%= link_to("登録する","/signup") %>
+              </li>
+              <li>
+                <%= link_to("ログイン","/login") %>
               </li>
             <% end %>
         </ul>

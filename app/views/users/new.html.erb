@@ -6,8 +6,10 @@
 <% end %>
 <%= form_tag("/users/create") do %>
   <div class="signup-form"> 
-    <p>ユーザー名</p>
-    <input name="name" value="<%= @user.name %>">
+    <div class="new-user-name">
+      <p>ユーザー名</p>
+      <input name="name" value="<%= @user.name %>">
+    </div>
     <p>メールアドレス</p>
     <input name="email" value="<%= @user.email %>"><br>
     <p>パスワード</p>

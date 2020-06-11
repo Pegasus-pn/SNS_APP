@@ -19,11 +19,34 @@ body{
 }
 
 ul li{
-  padding-left:15px;
   float:right;
+  margin:auto 0;
+  font-weight: 600;
+  margin-right:10px;
+  padding: 10px 10px;
+  margin-top:20px;
+  list-style:none;
+  display: inline-block;
+}
+
+.top-icon{
+  float:left;
+  color:rgb(47, 179, 47);
 }
 
 .register{
   border: 1px solid #e6ecf0;
   border-radius: 21px;
+  cursor: pointer;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.507) 0px 1px ;
+}
+
+header{
+  min-width:1200px;
+  padding-left:80px;
+  padding-right:80px;
+  background-color: white;
+  height:100px;
+  text-align: center;
 }
