@@ -4,13 +4,26 @@
   <%= @user.name %><br>
   <%= @user.email %>
   <% if @user.id == @current_user.id %>
-    <%= link_to("編集","/users/#{@user.id}/edit") %>
-    <%= link_to("削除","/users/#{@user.id}/destroy") %>
+    <%= link_to("/users/#{@user.id}/edit") do %>
+      <p>編集</p>
+    <% end %>
+    <%= link_to("/users/#{@user.id}/destroy") do %>
+      <p>削除</p>
+    <% end %>
   <% end %>
 </div>
 <div class="unique-user-index">
-  <%= link_to("投稿","/users/#{@user.id}")%>
-  <%= link_to("いいね","/users/#{@user.id}/likes") %>
+  <div class="tabs">
+    <%= link_to("/users/#{@user.id}") do %>
+      <input id="user-posts" type="radio" name="tab_item" checked>
+       <label class="tab_item" for="all">投稿</label>
+    <% end %>
+    
+    <%= link_to("/users/#{@user.id}/likes") do %>
+      <input id="user-likes" type="radio" name="tab_item">
+      <label class="tab_item" for="all">いいね</label>
+    <% end %>
+  </div>
 </div>
   <% @user.posts.each do |post|%>
     <div class="index-content">

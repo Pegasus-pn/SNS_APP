@@ -26,12 +26,11 @@ ul li{
   padding: 10px 10px;
   margin-top:20px;
   list-style:none;
-  display: inline;
+  display: inline-block;
 }
 
-.top-icon{
+.header-left{
   float:left;
-  color:rgb(47, 179, 47);
   font-size: 30px;
 }
 

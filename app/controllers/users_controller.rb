@@ -41,7 +41,6 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find_by(id: params[:id])
-
   end
 
   def update
@@ -70,8 +69,9 @@ class UsersController < ApplicationController
     flash[:notice] = "アカウントを削除しました"
     redirect_to("/users/index")
   end
- 
+
   def login_form
+    
   end
 
   def login

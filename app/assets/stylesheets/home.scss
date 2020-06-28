@@ -2,9 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-img{
- background-size:cover ;
- width: 100%;
- height:1000px;
+.eye-catch img{
+ display:block;
+ width:70%;
+ margin-left:auto;
+ margin-right:auto;
+ position: relative;
+ z-index: 0;
 }
 
+.eye-catch h1{
+ z-index: 1;
+ position: absolute;
+ top:300px;
+ left:auto;
+ width: 100%;
+ font-size: 180px;
+ color:#faededd2
+}

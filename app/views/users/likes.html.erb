@@ -1,10 +1,26 @@
+<h1>詳細画面</h1>
 <div class="users-show">  
   <img src="<%= "/user_images/#{@user.image_name}" %>">
   <%= @user.name %><br>
   <%= @user.email %>
   <% if @user.id == @current_user.id %>
-    <%= link_to("編集","/users/#{@user.id}/edit") %>
+    <%= link_to("/users/#{@user.id}/edit") do %>
+      <p>編集</p>
+    <% end %>
   <% end %>
+</div>
+<div class="unique-user-index">
+  <div class="tabs">
+      <%= link_to("/users/#{@user.id}") do %>
+        <input id="user-posts" type="radio" name="tab_item">
+        <label class="tab_item" for="all">投稿</label>
+      <% end %>
+      
+      <%= link_to("/users/#{@user.id}/likes") do %>
+        <input id="user-likes" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="all">いいね</label>
+      <% end %>
+    </div>
 </div>
 <% @likes.each do |like| %>
  <% post = Post.find_by(id: like.post_id) %>
